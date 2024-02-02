@@ -1,12 +1,14 @@
-function reverseString(str) {
+function reverseString(string) {
   let word = '';
-  for(let i = str.length -1; i <= 0; i--){
-  let char = str[i];
+  for(let i = string.length -1; i >= 0; i--){
+  let char = string[i];
   word  += char;
   }
   return word;
 }
-reverseString('fun')
-module.exports = function reverseString(string) {
 
-};
+module.exports = reverseString;
+
+
+
+
